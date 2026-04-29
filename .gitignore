@@ -1,0 +1,16 @@
+.venv/
+.dist/
+build/
+*.egg-info/
+artifacts/
+catboost_info/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+data/
+*.csv
+*.xlsx
+.env
+.DS_Store
+Thumbs.db
