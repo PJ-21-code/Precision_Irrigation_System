@@ -2,7 +2,6 @@
 .dist/
 build/
 *.egg-info/
-artifacts/
 catboost_info/
 __pycache__/
 *.pyc
