@@ -71,6 +71,8 @@ st.markdown("""
 # --- Load Models & Artifacts ---
 @st.cache_resource
 def load_pipeline():
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    artifacts_dir = os.path.join(BASE_DIR, 'artifacts')
     try:
         xgb_model = joblib.load('artifacts/xgb_model.joblib')
         lgb_model = joblib.load('artifacts/lgb_model.joblib')
@@ -81,6 +83,10 @@ def load_pipeline():
         category_cols = joblib.load('artifacts/category_cols.joblib')
         return xgb_model, lgb_model, cat_model, scaler, encoder, numeric_cols, category_cols
     except Exception as e:
+
+        print(f"CRITICAL ERROR LOADING PIPELINE: {e}")
+        st.error(f"Detailed Debug Error: {e}")
+
         return None, None, None, None, None, None, None
 
 xgb_model, lgb_model, cat_model, scaler, encoder, numeric_cols, category_cols = load_pipeline()
