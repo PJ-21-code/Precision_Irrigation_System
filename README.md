@@ -18,3 +18,5 @@ The **Precision Irrigation AI System** is an advanced, data-driven web applicati
 - **AI Explainability:** Demystifies the "black box" of machine learning by generating SHAP waterfall plots, showing precisely which environmental factors drove the model's decision.
 - **Water Conservation:** Aims to reduce water waste, estimating a 34% saving in water usage compared to traditional irrigation methods.
 
+### Here is the deployed streamlit app of Precision Irrigation System
+https://precisionirrigationsystem-smrf36wqojgf34wlsayvy3.streamlit.app/
