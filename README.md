@@ -3,6 +3,9 @@
 ## Overview
 The **Precision Irrigation AI System** is an advanced, data-driven web application designed to optimize water usage in agriculture. By leveraging state-of-the-art machine learning models and real-time weather forecasting, the system provides accurate, actionable recommendations on when and how much to irrigate crops.
 
+### Here is the deployed streamlit app of Precision Irrigation System
+https://precisionirrigationsystem-smrf36wqojgf34wlsayvy3.streamlit.app/
+- It may take five minutes to wake up due to streamlit cloud free tier
 ## Technologies Used
 - **Frontend & UI:** Streamlit
 - **Machine Learning Models:** XGBoost, LightGBM, CatBoost
@@ -71,5 +74,3 @@ flowchart TD
 - **AI Explainability:** Demystifies the "black box" of machine learning by generating SHAP waterfall plots, showing precisely which environmental factors drove the model's decision.
 - **Water Conservation:** Aims to reduce water waste, estimating a 34% saving in water usage compared to traditional irrigation methods.
 
-### Here is the deployed streamlit app of Precision Irrigation System
-https://precisionirrigationsystem-smrf36wqojgf34wlsayvy3.streamlit.app/
