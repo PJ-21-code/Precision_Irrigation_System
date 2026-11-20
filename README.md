@@ -68,7 +68,7 @@ flowchart TD
 ```
 
 ## What is Accomplished
-- **Ensemble Prediction:** Combines the predictive power of multiple robust gradient boosting algorithms (XGBoost, LightGBM, CatBoost) to achieve an estimated 89.5% accuracy in irrigation recommendations.
+- **Ensemble Prediction:** Combines the predictive power of multiple robust gradient boosting algorithms (XGBoost, LightGBM, CatBoost) to achieve an estimated 97.15% accuracy in irrigation recommendations.
 - **Real-Time Forecast Integration:** Connects seamlessly with the Open-Meteo API to fetch a 3-day weather forecast based on a user-provided location. The system intelligently adjusts irrigation plans by factoring in predicted rainfall.
 - **Interactive Simulation:** Allows users to adjust environmental parameters (Temperature, Humidity, Soil Moisture, Rainfall) via an intuitive slider interface to see how real-time changes impact irrigation requirements.
 - **AI Explainability:** Demystifies the "black box" of machine learning by generating SHAP waterfall plots, showing precisely which environmental factors drove the model's decision.
