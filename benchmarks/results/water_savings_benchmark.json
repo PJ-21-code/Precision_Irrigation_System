@@ -1,0 +1,125 @@
+{
+  "evaluation_records": 100000,
+  "class_distribution": {
+    "Low": 0.58529,
+    "Medium": 0.38077,
+    "High": 0.03394
+  },
+  "baselines": {
+    "fixed_schedule_15mm": 15.0,
+    "flood_irrigation_20mm": 20.0,
+    "mathematical_reproduction_baseline_mm": 14.37348484848485
+  },
+  "simulated_ai_water_consumption": {
+    "standard_tier_5_15_25_mm": 9.4865,
+    "midpoint_tier_2_5_15_25_mm": 8.023275,
+    "skip_low_tier_0_15_25_mm": 6.56005,
+    "weather_adjusted_dynamic_mm": 0.3915414466666667
+  },
+  "water_savings_percentages": {
+    "standard_vs_15mm_fixed_pct": 36.75666666666667,
+    "reproduced_claim_vs_14_33mm_pct": 34.00000000000001,
+    "standard_vs_20mm_flood_pct": 52.5675,
+    "weather_adjusted_vs_15mm_pct": 97.38972368888888
+  },
+  "sensitivity_analysis": {
+    "soil_moisture": [
+      {
+        "moisture_bin": "Very Low (<25%)",
+        "records": 28252,
+        "mean_ai_water": 14.569941951012318,
+        "high_need_pct": 11.63811411581481,
+        "low_need_pct": 15.938694605691634,
+        "savings_vs_15mm": 2.867053659917881
+      },
+      {
+        "moisture_bin": "Low (25-45%)",
+        "records": 34761,
+        "mean_ai_water": 7.546819711745922,
+        "high_need_pct": 0.13233221138632376,
+        "low_need_pct": 74.6641350939271,
+        "savings_vs_15mm": 49.68786858836052
+      },
+      {
+        "moisture_bin": "Moderate (45-65%)",
+        "records": 36987,
+        "mean_ai_water": 7.42652823965177,
+        "high_need_pct": 0.16221915808256956,
+        "low_need_pct": 75.89693676156487,
+        "savings_vs_15mm": 50.48981173565487
+      },
+      {
+        "moisture_bin": "High (>65%)",
+        "records": 0,
+        "mean_ai_water": NaN,
+        "high_need_pct": NaN,
+        "low_need_pct": NaN,
+        "savings_vs_15mm": NaN
+      }
+    ],
+    "temperature": [
+      {
+        "temp_bin": "Cool (<20\u00b0C)",
+        "records": 26510,
+        "mean_ai_water": 8.021501320256506,
+        "savings_vs_15mm": 46.52332453162329
+      },
+      {
+        "temp_bin": "Moderate (20-30\u00b0C)",
+        "records": 33161,
+        "mean_ai_water": 8.31292783691686,
+        "savings_vs_15mm": 44.58048108722094
+      },
+      {
+        "temp_bin": "Hot (>30\u00b0C)",
+        "records": 40329,
+        "mean_ai_water": 11.41449081306256,
+        "savings_vs_15mm": 23.903394579582933
+      }
+    ],
+    "crops": [
+      {
+        "Crop_Type": "Rice",
+        "records": 16859,
+        "mean_ai_water": 9.325879352274749,
+        "savings_vs_15mm": 37.82747098483501
+      },
+      {
+        "Crop_Type": "Wheat",
+        "records": 16364,
+        "mean_ai_water": 9.379736005866537,
+        "savings_vs_15mm": 37.468426627556426
+      },
+      {
+        "Crop_Type": "Sugarcane",
+        "records": 17403,
+        "mean_ai_water": 9.448083663736137,
+        "savings_vs_15mm": 37.01277557509242
+      },
+      {
+        "Crop_Type": "Cotton",
+        "records": 16637,
+        "mean_ai_water": 9.517040331790588,
+        "savings_vs_15mm": 36.553064454729416
+      },
+      {
+        "Crop_Type": "Potato",
+        "records": 16214,
+        "mean_ai_water": 9.557789564573826,
+        "savings_vs_15mm": 36.281402902841165
+      },
+      {
+        "Crop_Type": "Maize",
+        "records": 16523,
+        "mean_ai_water": 9.695878472432367,
+        "savings_vs_15mm": 35.36081018378422
+      }
+    ]
+  },
+  "methodological_assumptions_and_caveats": [
+    "Simulation is purely algorithmic, derived from decision volume tiers (25mm High, 15mm Med, 5mm Low).",
+    "Assumes a traditional fixed calendar baseline of 14.33 mm to 15.00 mm per application cycle.",
+    "Water savings represent simulated volumetric reduction in irrigation demand, NOT physically metered field trial savings.",
+    "Dynamic crop-growth feedback, transpiration rates, and soil moisture drawdown between cycles are not modeled."
+  ]
+}

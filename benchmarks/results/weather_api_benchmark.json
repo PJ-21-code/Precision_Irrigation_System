@@ -1,0 +1,793 @@
+{
+  "api_benchmarks": {
+    "tested_locations": [
+      "New Delhi",
+      "Des Moines",
+      "Fresno",
+      "Kyiv",
+      "Nairobi",
+      "Sao Paulo",
+      "Punjab",
+      "Cairo"
+    ],
+    "success_rate_pct": 100.0,
+    "successful_calls": 8,
+    "total_calls": 8,
+    "mean_latency_ms": 1724.611850004294,
+    "median_latency_ms": 1645.520200021565,
+    "p95_latency_ms": 1999.6972100285348,
+    "individual_location_results": [
+      {
+        "location_query": "New Delhi",
+        "resolved_name": "New Delhi, India",
+        "geo_success": true,
+        "geo_status": 200,
+        "geo_time_ms": 970.2901999698952,
+        "weather_success": true,
+        "weather_status": 200,
+        "weather_time_ms": 1073.2453999808058,
+        "total_time_ms": 2043.6983000254259,
+        "overall_success": true,
+        "forecast_days_retrieved": 3,
+        "forecast_3d_rain_mm": 0.0
+      },
+      {
+        "location_query": "Des Moines",
+        "resolved_name": "Des Moines, United States",
+        "geo_success": true,
+        "geo_status": 200,
+        "geo_time_ms": 785.9575999900699,
+        "weather_success": true,
+        "weather_status": 200,
+        "weather_time_ms": 886.46119995974,
+        "total_time_ms": 1672.521400032565,
+        "overall_success": true,
+        "forecast_days_retrieved": 3,
+        "forecast_3d_rain_mm": 49.03
+      },
+      {
+        "location_query": "Fresno",
+        "resolved_name": "Fresno, United States",
+        "geo_success": true,
+        "geo_status": 200,
+        "geo_time_ms": 796.8245000811294,
+        "weather_success": true,
+        "weather_status": 200,
+        "weather_time_ms": 821.5882000513375,
+        "total_time_ms": 1618.519000010565,
+        "overall_success": true,
+        "forecast_days_retrieved": 3,
+        "forecast_3d_rain_mm": 3.1
+      },
+      {
+        "location_query": "Kyiv",
+        "resolved_name": "Kyiv, Ukraine",
+        "geo_success": true,
+        "geo_status": 200,
+        "geo_time_ms": 960.6027000118047,
+        "weather_success": true,
+        "weather_status": 200,
+        "weather_time_ms": 853.6029999377206,
+        "total_time_ms": 1814.3582999473438,
+        "overall_success": true,
+        "forecast_days_retrieved": 3,
+        "forecast_3d_rain_mm": 11.4
+      },
+      {
+        "location_query": "Nairobi",
+        "resolved_name": "Nairobi, Kenya",
+        "geo_success": true,
+        "geo_status": 200,
+        "geo_time_ms": 796.590100042522,
+        "weather_success": true,
+        "weather_status": 200,
+        "weather_time_ms": 782.2352999355644,
+        "total_time_ms": 1578.9103000424802,
+        "overall_success": true,
+        "forecast_days_retrieved": 3,
+        "forecast_3d_rain_mm": 33.2
+      },
+      {
+        "location_query": "Sao Paulo",
+        "resolved_name": "S\u00e3o Paulo, Brazil",
+        "geo_success": true,
+        "geo_status": 200,
+        "geo_time_ms": 821.1054999846965,
+        "weather_success": true,
+        "weather_status": 200,
+        "weather_time_ms": 759.7441000398248,
+        "total_time_ms": 1580.96559997648,
+        "overall_success": true,
+        "forecast_days_retrieved": 3,
+        "forecast_3d_rain_mm": 10.8
+      },
+      {
+        "location_query": "Punjab",
+        "resolved_name": "Chak Number Two, Pakistan",
+        "geo_success": true,
+        "geo_status": 200,
+        "geo_time_ms": 927.5558000663295,
+        "weather_success": true,
+        "weather_status": 200,
+        "weather_time_ms": 990.3152000624686,
+        "total_time_ms": 1917.9809000343084,
+        "overall_success": true,
+        "forecast_days_retrieved": 3,
+        "forecast_3d_rain_mm": 0.0
+      },
+      {
+        "location_query": "Cairo",
+        "resolved_name": "Cairo, Egypt",
+        "geo_success": true,
+        "geo_status": 200,
+        "geo_time_ms": 840.1035000570118,
+        "weather_success": true,
+        "weather_status": 200,
+        "weather_time_ms": 729.7297000186518,
+        "total_time_ms": 1569.9409999651834,
+        "overall_success": true,
+        "forecast_days_retrieved": 3,
+        "forecast_3d_rain_mm": 0.0
+      }
+    ]
+  },
+  "rainfall_adjustment_curves": {
+    "High": [
+      {
+        "rainfall_mm": 0,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 25.0,
+        "water_savings_pct": 0.0,
+        "decision": "Adjusted to 25.0 mm"
+      },
+      {
+        "rainfall_mm": 1,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 24.0,
+        "water_savings_pct": 4.0,
+        "decision": "Adjusted to 24.0 mm"
+      },
+      {
+        "rainfall_mm": 2,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 23.0,
+        "water_savings_pct": 8.0,
+        "decision": "Adjusted to 23.0 mm"
+      },
+      {
+        "rainfall_mm": 3,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 22.0,
+        "water_savings_pct": 12.0,
+        "decision": "Adjusted to 22.0 mm"
+      },
+      {
+        "rainfall_mm": 4,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 21.0,
+        "water_savings_pct": 16.0,
+        "decision": "Adjusted to 21.0 mm"
+      },
+      {
+        "rainfall_mm": 5,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 20.0,
+        "water_savings_pct": 20.0,
+        "decision": "Adjusted to 20.0 mm"
+      },
+      {
+        "rainfall_mm": 6,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 19.0,
+        "water_savings_pct": 24.0,
+        "decision": "Adjusted to 19.0 mm"
+      },
+      {
+        "rainfall_mm": 7,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 18.0,
+        "water_savings_pct": 28.000000000000004,
+        "decision": "Adjusted to 18.0 mm"
+      },
+      {
+        "rainfall_mm": 8,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 17.0,
+        "water_savings_pct": 32.0,
+        "decision": "Adjusted to 17.0 mm"
+      },
+      {
+        "rainfall_mm": 9,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 16.0,
+        "water_savings_pct": 36.0,
+        "decision": "Adjusted to 16.0 mm"
+      },
+      {
+        "rainfall_mm": 10,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 15.0,
+        "water_savings_pct": 40.0,
+        "decision": "Adjusted to 15.0 mm"
+      },
+      {
+        "rainfall_mm": 11,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 12,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 13,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 14,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 15,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 16,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 17,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 18,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 19,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 20,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 21,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 22,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 23,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 24,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 25,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 26,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 27,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 28,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 29,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 30,
+        "base_irrigation_mm": 25,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      }
+    ],
+    "Medium": [
+      {
+        "rainfall_mm": 0,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 15.0,
+        "water_savings_pct": 0.0,
+        "decision": "Adjusted to 15.0 mm"
+      },
+      {
+        "rainfall_mm": 1,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 14.0,
+        "water_savings_pct": 6.666666666666667,
+        "decision": "Adjusted to 14.0 mm"
+      },
+      {
+        "rainfall_mm": 2,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 13.0,
+        "water_savings_pct": 13.333333333333334,
+        "decision": "Adjusted to 13.0 mm"
+      },
+      {
+        "rainfall_mm": 3,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 12.0,
+        "water_savings_pct": 20.0,
+        "decision": "Adjusted to 12.0 mm"
+      },
+      {
+        "rainfall_mm": 4,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 11.0,
+        "water_savings_pct": 26.666666666666668,
+        "decision": "Adjusted to 11.0 mm"
+      },
+      {
+        "rainfall_mm": 5,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 10.0,
+        "water_savings_pct": 33.33333333333333,
+        "decision": "Adjusted to 10.0 mm"
+      },
+      {
+        "rainfall_mm": 6,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 9.0,
+        "water_savings_pct": 40.0,
+        "decision": "Adjusted to 9.0 mm"
+      },
+      {
+        "rainfall_mm": 7,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 8.0,
+        "water_savings_pct": 46.666666666666664,
+        "decision": "Adjusted to 8.0 mm"
+      },
+      {
+        "rainfall_mm": 8,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 7.0,
+        "water_savings_pct": 53.333333333333336,
+        "decision": "Adjusted to 7.0 mm"
+      },
+      {
+        "rainfall_mm": 9,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 6.0,
+        "water_savings_pct": 60.0,
+        "decision": "Adjusted to 6.0 mm"
+      },
+      {
+        "rainfall_mm": 10,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 5.0,
+        "water_savings_pct": 66.66666666666666,
+        "decision": "Adjusted to 5.0 mm"
+      },
+      {
+        "rainfall_mm": 11,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 12,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 13,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 14,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 15,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 16,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 17,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 18,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 19,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 20,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 21,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 22,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 23,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 24,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 25,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 26,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 27,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 28,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 29,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 30,
+        "base_irrigation_mm": 15,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      }
+    ],
+    "Low": [
+      {
+        "rainfall_mm": 0,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 5.0,
+        "water_savings_pct": 0.0,
+        "decision": "Adjusted to 5.0 mm"
+      },
+      {
+        "rainfall_mm": 1,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 4.0,
+        "water_savings_pct": 20.0,
+        "decision": "Adjusted to 4.0 mm"
+      },
+      {
+        "rainfall_mm": 2,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 3.0,
+        "water_savings_pct": 40.0,
+        "decision": "Adjusted to 3.0 mm"
+      },
+      {
+        "rainfall_mm": 3,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 2.0,
+        "water_savings_pct": 60.0,
+        "decision": "Adjusted to 2.0 mm"
+      },
+      {
+        "rainfall_mm": 4,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 1.0,
+        "water_savings_pct": 80.0,
+        "decision": "Adjusted to 1.0 mm"
+      },
+      {
+        "rainfall_mm": 5,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (0 mm)"
+      },
+      {
+        "rainfall_mm": 6,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (0 mm)"
+      },
+      {
+        "rainfall_mm": 7,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (0 mm)"
+      },
+      {
+        "rainfall_mm": 8,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (0 mm)"
+      },
+      {
+        "rainfall_mm": 9,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (0 mm)"
+      },
+      {
+        "rainfall_mm": 10,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (0 mm)"
+      },
+      {
+        "rainfall_mm": 11,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 12,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 13,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 14,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 15,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 16,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 17,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 18,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 19,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 20,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 21,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 22,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 23,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 24,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 25,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 26,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 27,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 28,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 29,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      },
+      {
+        "rainfall_mm": 30,
+        "base_irrigation_mm": 5,
+        "adjusted_irrigation_mm": 0.0,
+        "water_savings_pct": 100.0,
+        "decision": "Skip (Rain > 10mm)"
+      }
+    ]
+  }
+}

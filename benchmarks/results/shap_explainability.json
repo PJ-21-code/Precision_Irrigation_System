@@ -1,0 +1,182 @@
+{
+  "tree_explainer_init_ms": 943.9060000004247,
+  "explanation_latency": {
+    "1": {
+      "mean_ms": 31.664360023569316,
+      "p50_ms": 31.213250011205673,
+      "p95_ms": 34.321760025341064,
+      "per_sample_ms": 31.664360023569316,
+      "trials": 10
+    },
+    "5": {
+      "mean_ms": 44.93462000973523,
+      "p50_ms": 45.906150015071034,
+      "p95_ms": 47.538270021323115,
+      "per_sample_ms": 8.986924001947045,
+      "trials": 10
+    },
+    "10": {
+      "mean_ms": 57.30969000142068,
+      "p50_ms": 52.41909995675087,
+      "p95_ms": 72.33649502159096,
+      "per_sample_ms": 5.730969000142068,
+      "trials": 10
+    },
+    "50": {
+      "mean_ms": 200.78981998376548,
+      "p50_ms": 197.2001000540331,
+      "p95_ms": 215.24359991308302,
+      "per_sample_ms": 4.01579639967531,
+      "trials": 5
+    },
+    "100": {
+      "mean_ms": 372.0499200047925,
+      "p50_ms": 380.8501000748947,
+      "p95_ms": 395.75237995013595,
+      "per_sample_ms": 3.720499200047925,
+      "trials": 5
+    }
+  },
+  "top_features_ranked": [
+    {
+      "feature": "Soil_Moisture",
+      "mean_abs_shap_global": 1.483154296875,
+      "mean_abs_shap_Low": 2.1091842651367188,
+      "mean_abs_shap_Medium": 0.33367013931274414,
+      "mean_abs_shap_High": 2.006608009338379
+    },
+    {
+      "feature": "Temperature_C",
+      "mean_abs_shap_global": 0.8755017518997192,
+      "mean_abs_shap_Low": 1.335365653038025,
+      "mean_abs_shap_Medium": 0.1438528150320053,
+      "mean_abs_shap_High": 1.1472878456115723
+    },
+    {
+      "feature": "Mulching_Used_No",
+      "mean_abs_shap_global": 0.8210534453392029,
+      "mean_abs_shap_Low": 1.4515961408615112,
+      "mean_abs_shap_Medium": 0.11980164796113968,
+      "mean_abs_shap_High": 0.8917630910873413
+    },
+    {
+      "feature": "Wind_Speed_kmh",
+      "mean_abs_shap_global": 0.758453369140625,
+      "mean_abs_shap_Low": 1.3611161708831787,
+      "mean_abs_shap_Medium": 0.12574340403079987,
+      "mean_abs_shap_High": 0.7885008454322815
+    },
+    {
+      "feature": "Crop_Growth_Stage_Sowing",
+      "mean_abs_shap_global": 0.7460952401161194,
+      "mean_abs_shap_Low": 1.0292621850967407,
+      "mean_abs_shap_Medium": 0.3262353837490082,
+      "mean_abs_shap_High": 0.8827881813049316
+    },
+    {
+      "feature": "Crop_Growth_Stage_Harvest",
+      "mean_abs_shap_global": 0.6173756122589111,
+      "mean_abs_shap_Low": 0.8991288542747498,
+      "mean_abs_shap_Medium": 0.2333913892507553,
+      "mean_abs_shap_High": 0.7196068167686462
+    },
+    {
+      "feature": "Soil_moisture_sqrt",
+      "mean_abs_shap_global": 0.38987255096435547,
+      "mean_abs_shap_Low": 0.5885870456695557,
+      "mean_abs_shap_Medium": 0.05977488309144974,
+      "mean_abs_shap_High": 0.5212557315826416
+    },
+    {
+      "feature": "Crop_Growth_Stage_Flowering",
+      "mean_abs_shap_global": 0.3228737413883209,
+      "mean_abs_shap_Low": 0.8874667286872864,
+      "mean_abs_shap_Medium": 0.04239527881145477,
+      "mean_abs_shap_High": 0.03875846415758133
+    },
+    {
+      "feature": "rainfall_temp_ratio",
+      "mean_abs_shap_global": 0.26758715510368347,
+      "mean_abs_shap_Low": 0.059852197766304016,
+      "mean_abs_shap_Medium": 0.05544249713420868,
+      "mean_abs_shap_High": 0.6874668598175049
+    },
+    {
+      "feature": "wind_chill_proxy",
+      "mean_abs_shap_global": 0.23474904894828796,
+      "mean_abs_shap_Low": 0.15772829949855804,
+      "mean_abs_shap_Medium": 0.12551917135715485,
+      "mean_abs_shap_High": 0.42099955677986145
+    },
+    {
+      "feature": "Crop_Growth_Stage_Vegetative",
+      "mean_abs_shap_global": 0.23138350248336792,
+      "mean_abs_shap_Low": 0.6409852504730225,
+      "mean_abs_shap_Medium": 0.02057713456451893,
+      "mean_abs_shap_High": 0.03258815035223961
+    },
+    {
+      "feature": "Rainfall_mm",
+      "mean_abs_shap_global": 0.21295583248138428,
+      "mean_abs_shap_Low": 0.15019285678863525,
+      "mean_abs_shap_Medium": 0.11246111243963242,
+      "mean_abs_shap_High": 0.37621352076530457
+    },
+    {
+      "feature": "water_balance",
+      "mean_abs_shap_global": 0.18666020035743713,
+      "mean_abs_shap_Low": 0.0818697065114975,
+      "mean_abs_shap_Medium": 0.13086475431919098,
+      "mean_abs_shap_High": 0.3472461700439453
+    },
+    {
+      "feature": "Mulching_Used_Yes",
+      "mean_abs_shap_global": 0.1855538934469223,
+      "mean_abs_shap_Low": 0.36172494292259216,
+      "mean_abs_shap_Medium": 0.017788566648960114,
+      "mean_abs_shap_High": 0.17714808881282806
+    },
+    {
+      "feature": "Humidity",
+      "mean_abs_shap_global": 0.18519112467765808,
+      "mean_abs_shap_Low": 0.19737118482589722,
+      "mean_abs_shap_Medium": 0.12304746359586716,
+      "mean_abs_shap_High": 0.23515485227108002
+    },
+    {
+      "feature": "Previous_Irrigation_mm",
+      "mean_abs_shap_global": 0.17385171353816986,
+      "mean_abs_shap_Low": 0.1492609977722168,
+      "mean_abs_shap_Medium": 0.11770746856927872,
+      "mean_abs_shap_High": 0.25458669662475586
+    },
+    {
+      "feature": "irrigation_diff",
+      "mean_abs_shap_global": 0.1223348081111908,
+      "mean_abs_shap_Low": 0.029032712802290916,
+      "mean_abs_shap_Medium": 0.0480390302836895,
+      "mean_abs_shap_High": 0.2899326980113983
+    },
+    {
+      "feature": "air_soil_moisture_mismatch",
+      "mean_abs_shap_global": 0.10359790921211243,
+      "mean_abs_shap_Low": 0.064914271235466,
+      "mean_abs_shap_Medium": 0.03942464292049408,
+      "mean_abs_shap_High": 0.20645485818386078
+    },
+    {
+      "feature": "log_Rainfall_mm",
+      "mean_abs_shap_global": 0.04875950887799263,
+      "mean_abs_shap_Low": 0.043698981404304504,
+      "mean_abs_shap_Medium": 0.024728991091251373,
+      "mean_abs_shap_High": 0.0778505727648735
+    },
+    {
+      "feature": "log_Previous_Irrigation_mm",
+      "mean_abs_shap_global": 0.04019073396921158,
+      "mean_abs_shap_Low": 0.04353749379515648,
+      "mean_abs_shap_Medium": 0.028079383075237274,
+      "mean_abs_shap_High": 0.04895535111427307
+    }
+  ]
+}

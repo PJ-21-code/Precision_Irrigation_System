@@ -1,0 +1,1579 @@
+{
+  "timestamp": "2026-11-20 15:58:09",
+  "reports": {
+    "models": {
+      "evaluation_scope": "Stratified Sample (49,999 records)",
+      "evaluation_samples": 49999,
+      "timestamp": "2026-11-20 15:52:43",
+      "models": {
+        "XGBoost": {
+          "accuracy": 0.9869597391947839,
+          "balanced_accuracy": 0.9885680319817037,
+          "macro_f1": 0.9757035145345374,
+          "weighted_f1": 0.986984372276225,
+          "macro_precision": 0.9642127607358999,
+          "weighted_precision": 0.9872433729334008,
+          "macro_recall": 0.9885680319817037,
+          "weighted_recall": 0.9869597391947839,
+          "confusion_matrix": [
+            [
+              29237,
+              121,
+              0
+            ],
+            [
+              366,
+              18447,
+              161
+            ],
+            [
+              0,
+              4,
+              1663
+            ]
+          ],
+          "class_metrics": {
+            "Low": {
+              "precision": 0.9876363882038982,
+              "recall": 0.9958784658355474,
+              "f1_score": 0.9917403029120945,
+              "support": 29358
+            },
+            "Medium": {
+              "precision": 0.9932694378634503,
+              "recall": 0.9722251502055445,
+              "f1_score": 0.9826346348479199,
+              "support": 18974
+            },
+            "High": {
+              "precision": 0.9117324561403509,
+              "recall": 0.9976004799040192,
+              "f1_score": 0.9527356058435978,
+              "support": 1667
+            }
+          },
+          "inference_time_sec": 0.5601296424865723
+        },
+        "LightGBM": {
+          "accuracy": 0.9902598051961039,
+          "balanced_accuracy": 0.9921900900916233,
+          "macro_f1": 0.9881137323273235,
+          "weighted_f1": 0.9902502836183427,
+          "macro_precision": 0.984227725964714,
+          "weighted_precision": 0.9903011807287596,
+          "macro_recall": 0.9921900900916233,
+          "weighted_recall": 0.9902598051961039,
+          "confusion_matrix": [
+            [
+              29238,
+              120,
+              0
+            ],
+            [
+              315,
+              18607,
+              52
+            ],
+            [
+              0,
+              0,
+              1667
+            ]
+          ],
+          "class_metrics": {
+            "Low": {
+              "precision": 0.9893411836361791,
+              "recall": 0.9959125281013693,
+              "f1_score": 0.9926159800376839,
+              "support": 29358
+            },
+            "Medium": {
+              "precision": 0.9935921396913547,
+              "recall": 0.9806577421735005,
+              "f1_score": 0.9870825707540914,
+              "support": 18974
+            },
+            "High": {
+              "precision": 0.9697498545666084,
+              "recall": 1.0,
+              "f1_score": 0.9846426461901949,
+              "support": 1667
+            }
+          },
+          "inference_time_sec": 10.58507490158081
+        },
+        "CatBoost": {
+          "accuracy": 0.986759735194704,
+          "balanced_accuracy": 0.9676369355308988,
+          "macro_f1": 0.9749506977303826,
+          "weighted_f1": 0.9867133827672754,
+          "macro_precision": 0.9826348761342709,
+          "weighted_precision": 0.9867376091294849,
+          "macro_recall": 0.9676369355308988,
+          "weighted_recall": 0.986759735194704,
+          "confusion_matrix": [
+            [
+              29231,
+              127,
+              0
+            ],
+            [
+              375,
+              18557,
+              42
+            ],
+            [
+              0,
+              118,
+              1549
+            ]
+          ],
+          "class_metrics": {
+            "Low": {
+              "precision": 0.9873336485847464,
+              "recall": 0.9956740922406159,
+              "f1_score": 0.9914863306424259,
+              "support": 29358
+            },
+            "Medium": {
+              "precision": 0.986969471332837,
+              "recall": 0.9780225571835143,
+              "f1_score": 0.9824756459127488,
+              "support": 18974
+            },
+            "High": {
+              "precision": 0.9736015084852294,
+              "recall": 0.9292141571685663,
+              "f1_score": 0.950890116635973,
+              "support": 1667
+            }
+          },
+          "inference_time_sec": 0.05089879035949707
+        },
+        "Ensemble": {
+          "accuracy": 0.9874797495949919,
+          "balanced_accuracy": 0.9890123697573161,
+          "macro_f1": 0.9778013220395008,
+          "weighted_f1": 0.9874934858227538,
+          "macro_precision": 0.9676653336937656,
+          "weighted_precision": 0.9877030716859101,
+          "macro_recall": 0.9890123697573161,
+          "weighted_recall": 0.9874797495949919,
+          "confusion_matrix": [
+            [
+              29239,
+              119,
+              0
+            ],
+            [
+              362,
+              18471,
+              141
+            ],
+            [
+              0,
+              4,
+              1663
+            ]
+          ],
+          "class_metrics": {
+            "Low": {
+              "precision": 0.9877706834228573,
+              "recall": 0.9959465903671912,
+              "f1_score": 0.9918417883614037,
+              "support": 29358
+            },
+            "Medium": {
+              "precision": 0.9933849628912552,
+              "recall": 0.9734900390007378,
+              "f1_score": 0.9833368824531517,
+              "support": 18974
+            },
+            "High": {
+              "precision": 0.9218403547671841,
+              "recall": 0.9976004799040192,
+              "f1_score": 0.958225295303947,
+              "support": 1667
+            }
+          },
+          "inference_time_sec": 11.198182106018066
+        }
+      }
+    },
+    "efficiency": {
+      "memory_disk_mb": {
+        "xgb_model": 15.181456565856934,
+        "lgb_model": 40.23435592651367,
+        "cat_model": 3.073300361633301,
+        "scaler": 0.0014104843139648438,
+        "encoder": 0.002593994140625,
+        "numeric_cols": 0.00027370452880859375,
+        "category_cols": 0.00012111663818359375
+      },
+      "total_disk_mb": 58.49351215362549,
+      "peak_ram_load_mb": 125.49226188659668,
+      "batch_benchmarks": {
+        "1": {
+          "XGBoost": {
+            "mean_ms": 3.6116200033575296,
+            "std_ms": 0.4833811401627115,
+            "p50_ms": 3.517500008456409,
+            "p95_ms": 4.108619992621243,
+            "p99_ms": 5.329288034699854,
+            "min_ms": 3.2015000469982624,
+            "max_ms": 5.7088000467047095,
+            "trials": 25,
+            "per_sample_ms": 3.6116200033575296,
+            "throughput_samples_per_sec": 276.884057312329
+          },
+          "LightGBM": {
+            "mean_ms": 1.8904679967090487,
+            "std_ms": 0.1612544547790678,
+            "p50_ms": 1.9257999956607819,
+            "p95_ms": 2.0698200445622206,
+            "p99_ms": 2.204224006272852,
+            "min_ms": 1.5677999472245574,
+            "max_ms": 2.2461999906226993,
+            "trials": 25,
+            "per_sample_ms": 1.8904679967090487,
+            "throughput_samples_per_sec": 528.9695470861252
+          },
+          "CatBoost": {
+            "mean_ms": 0.3281079977750778,
+            "std_ms": 0.04303294108656774,
+            "p50_ms": 0.3336999798193574,
+            "p95_ms": 0.39123997557908297,
+            "p99_ms": 0.40641197934746737,
+            "min_ms": 0.2615998964756727,
+            "max_ms": 0.41089998558163643,
+            "trials": 25,
+            "per_sample_ms": 0.3281079977750778,
+            "throughput_samples_per_sec": 3047.7769721587606
+          },
+          "Ensemble": {
+            "mean_ms": 9.316576006822288,
+            "std_ms": 0.9696097992944609,
+            "p50_ms": 9.04840009752661,
+            "p95_ms": 10.326279955916107,
+            "p99_ms": 12.491923999041314,
+            "min_ms": 8.278300054371357,
+            "max_ms": 13.165100011974573,
+            "trials": 25,
+            "per_sample_ms": 9.316576006822288,
+            "throughput_samples_per_sec": 107.33557041425152
+          }
+        },
+        "10": {
+          "XGBoost": {
+            "mean_ms": 4.466779991053045,
+            "std_ms": 0.3815891798758914,
+            "p50_ms": 4.34109999332577,
+            "p95_ms": 5.2645199932157976,
+            "p99_ms": 5.776831973344087,
+            "min_ms": 4.150399938225746,
+            "max_ms": 5.897599970921874,
+            "trials": 25,
+            "per_sample_ms": 0.4466779991053045,
+            "throughput_samples_per_sec": 2238.7491705501475
+          },
+          "LightGBM": {
+            "mean_ms": 3.5273840045556426,
+            "std_ms": 0.2322280709149331,
+            "p50_ms": 3.4618000499904156,
+            "p95_ms": 3.9662399794906373,
+            "p99_ms": 4.06894797924906,
+            "min_ms": 3.2325999345630407,
+            "max_ms": 4.095299984328449,
+            "trials": 25,
+            "per_sample_ms": 0.35273840045556426,
+            "throughput_samples_per_sec": 2834.9621099049396
+          },
+          "CatBoost": {
+            "mean_ms": 1.0485680028796196,
+            "std_ms": 0.12108381927335926,
+            "p50_ms": 1.0086999973282218,
+            "p95_ms": 1.2584800366312265,
+            "p99_ms": 1.2667000107467175,
+            "min_ms": 0.8769999258220196,
+            "max_ms": 1.2684999965131283,
+            "trials": 25,
+            "per_sample_ms": 0.10485680028796196,
+            "throughput_samples_per_sec": 9536.81589800337
+          },
+          "Ensemble": {
+            "mean_ms": 13.558011995628476,
+            "std_ms": 0.49355902758609377,
+            "p50_ms": 13.654200010932982,
+            "p95_ms": 14.405480003915727,
+            "p99_ms": 14.452859978191555,
+            "min_ms": 12.79649999924004,
+            "max_ms": 14.459699974395335,
+            "trials": 25,
+            "per_sample_ms": 1.3558011995628476,
+            "throughput_samples_per_sec": 737.571260685144
+          }
+        },
+        "100": {
+          "XGBoost": {
+            "mean_ms": 7.450632001273334,
+            "std_ms": 0.36650706860715615,
+            "p50_ms": 7.299500051885843,
+            "p95_ms": 7.935379934497178,
+            "p99_ms": 8.445663969032465,
+            "min_ms": 7.063600001856685,
+            "max_ms": 8.60499998088926,
+            "trials": 25,
+            "per_sample_ms": 0.07450632001273334,
+            "throughput_samples_per_sec": 13421.680198795179
+          },
+          "LightGBM": {
+            "mean_ms": 23.08289598673582,
+            "std_ms": 0.752771335070028,
+            "p50_ms": 23.301100009121,
+            "p95_ms": 24.326100014150143,
+            "p99_ms": 24.422951992601156,
+            "min_ms": 21.833600010722876,
+            "max_ms": 24.428999982774258,
+            "trials": 25,
+            "per_sample_ms": 0.2308289598673582,
+            "throughput_samples_per_sec": 4332.212043820811
+          },
+          "CatBoost": {
+            "mean_ms": 1.4180360035970807,
+            "std_ms": 0.12794063577243847,
+            "p50_ms": 1.3829999370500445,
+            "p95_ms": 1.6499199904501438,
+            "p99_ms": 1.675060004927218,
+            "min_ms": 1.2371999910101295,
+            "max_ms": 1.6819000011309981,
+            "trials": 25,
+            "per_sample_ms": 0.014180360035970807,
+            "throughput_samples_per_sec": 70520.07124384261
+          },
+          "Ensemble": {
+            "mean_ms": 35.20613199099898,
+            "std_ms": 1.145403424355191,
+            "p50_ms": 35.27239989489317,
+            "p95_ms": 36.88582004979253,
+            "p99_ms": 38.19225597195327,
+            "min_ms": 33.62910007126629,
+            "max_ms": 38.58119994401932,
+            "trials": 25,
+            "per_sample_ms": 0.35206131990998984,
+            "throughput_samples_per_sec": 2840.4142785571166
+          }
+        },
+        "1000": {
+          "XGBoost": {
+            "mean_ms": 16.84657199308276,
+            "std_ms": 1.9972948598157674,
+            "p50_ms": 15.628499910235405,
+            "p95_ms": 21.147400047630068,
+            "p99_ms": 21.37416399549693,
+            "min_ms": 15.058599994517863,
+            "max_ms": 21.40029997099191,
+            "trials": 25,
+            "per_sample_ms": 0.016846571993082763,
+            "throughput_samples_per_sec": 59359.257207377384
+          },
+          "LightGBM": {
+            "mean_ms": 213.44353600870818,
+            "std_ms": 6.242903345210136,
+            "p50_ms": 213.39709998574108,
+            "p95_ms": 221.39091999270022,
+            "p99_ms": 227.1042559901252,
+            "min_ms": 201.3368000043556,
+            "max_ms": 228.85519999545068,
+            "trials": 25,
+            "per_sample_ms": 0.2134435360087082,
+            "throughput_samples_per_sec": 4685.079804708639
+          },
+          "CatBoost": {
+            "mean_ms": 3.664823994040489,
+            "std_ms": 0.5309414699381968,
+            "p50_ms": 3.525500069372356,
+            "p95_ms": 4.498160048387945,
+            "p99_ms": 4.625643994659185,
+            "min_ms": 2.4923000019043684,
+            "max_ms": 4.659099970012903,
+            "trials": 25,
+            "per_sample_ms": 0.003664823994040489,
+            "throughput_samples_per_sec": 272864.3999346595
+          },
+          "Ensemble": {
+            "mean_ms": 239.1801800020039,
+            "std_ms": 6.7429640550083265,
+            "p50_ms": 238.67779993452132,
+            "p95_ms": 247.74353997781873,
+            "p99_ms": 257.1907400107011,
+            "min_ms": 224.86449999269098,
+            "max_ms": 260.0327000254765,
+            "trials": 25,
+            "per_sample_ms": 0.23918018000200392,
+            "throughput_samples_per_sec": 4180.948438083882
+          }
+        },
+        "10000": {
+          "XGBoost": {
+            "mean_ms": 123.3321333459268,
+            "std_ms": 4.210686939286998,
+            "p50_ms": 122.6877000881359,
+            "p95_ms": 129.6673600212671,
+            "p99_ms": 131.78819206776097,
+            "min_ms": 117.01929999981076,
+            "max_ms": 132.31840007938445,
+            "trials": 15,
+            "per_sample_ms": 0.01233321333459268,
+            "throughput_samples_per_sec": 81081.86997748274
+          },
+          "LightGBM": {
+            "mean_ms": 2231.1636733356863,
+            "std_ms": 154.74904838578124,
+            "p50_ms": 2154.9773000879213,
+            "p95_ms": 2538.0494100390933,
+            "p99_ms": 2581.2627619947307,
+            "min_ms": 2082.4913000687957,
+            "max_ms": 2592.06609998364,
+            "trials": 15,
+            "per_sample_ms": 0.22311636733356863,
+            "throughput_samples_per_sec": 4481.966123556309
+          },
+          "CatBoost": {
+            "mean_ms": 12.605706664423147,
+            "std_ms": 0.8789809712339,
+            "p50_ms": 12.677000020630658,
+            "p95_ms": 14.288670034147799,
+            "p99_ms": 14.372053951956332,
+            "min_ms": 11.037499993108213,
+            "max_ms": 14.392899931408465,
+            "trials": 15,
+            "per_sample_ms": 0.0012605706664423147,
+            "throughput_samples_per_sec": 793291.5040949521
+          },
+          "Ensemble": {
+            "mean_ms": 2514.9794466715925,
+            "std_ms": 320.9530006663934,
+            "p50_ms": 2395.197800011374,
+            "p95_ms": 2953.166089975274,
+            "p99_ms": 3498.6572179989885,
+            "min_ms": 2315.287800040096,
+            "max_ms": 3635.0300000049174,
+            "trials": 15,
+            "per_sample_ms": 0.25149794466715925,
+            "throughput_samples_per_sec": 3976.1756356435967
+          }
+        }
+      },
+      "end_to_end_single_query": {
+        "mean_ms": 16.09001999720931,
+        "std_ms": 0.8462509918013125,
+        "p50_ms": 16.252100002020597,
+        "p95_ms": 17.214780021458864,
+        "p99_ms": 17.589107928797603,
+        "min_ms": 14.869599952362478,
+        "max_ms": 17.706899903714657,
+        "trials": 25
+      }
+    },
+    "shap": {
+      "tree_explainer_init_ms": 943.9060000004247,
+      "explanation_latency": {
+        "1": {
+          "mean_ms": 31.664360023569316,
+          "p50_ms": 31.213250011205673,
+          "p95_ms": 34.321760025341064,
+          "per_sample_ms": 31.664360023569316,
+          "trials": 10
+        },
+        "5": {
+          "mean_ms": 44.93462000973523,
+          "p50_ms": 45.906150015071034,
+          "p95_ms": 47.538270021323115,
+          "per_sample_ms": 8.986924001947045,
+          "trials": 10
+        },
+        "10": {
+          "mean_ms": 57.30969000142068,
+          "p50_ms": 52.41909995675087,
+          "p95_ms": 72.33649502159096,
+          "per_sample_ms": 5.730969000142068,
+          "trials": 10
+        },
+        "50": {
+          "mean_ms": 200.78981998376548,
+          "p50_ms": 197.2001000540331,
+          "p95_ms": 215.24359991308302,
+          "per_sample_ms": 4.01579639967531,
+          "trials": 5
+        },
+        "100": {
+          "mean_ms": 372.0499200047925,
+          "p50_ms": 380.8501000748947,
+          "p95_ms": 395.75237995013595,
+          "per_sample_ms": 3.720499200047925,
+          "trials": 5
+        }
+      },
+      "top_features_ranked": [
+        {
+          "feature": "Soil_Moisture",
+          "mean_abs_shap_global": 1.483154296875,
+          "mean_abs_shap_Low": 2.1091842651367188,
+          "mean_abs_shap_Medium": 0.33367013931274414,
+          "mean_abs_shap_High": 2.006608009338379
+        },
+        {
+          "feature": "Temperature_C",
+          "mean_abs_shap_global": 0.8755017518997192,
+          "mean_abs_shap_Low": 1.335365653038025,
+          "mean_abs_shap_Medium": 0.1438528150320053,
+          "mean_abs_shap_High": 1.1472878456115723
+        },
+        {
+          "feature": "Mulching_Used_No",
+          "mean_abs_shap_global": 0.8210534453392029,
+          "mean_abs_shap_Low": 1.4515961408615112,
+          "mean_abs_shap_Medium": 0.11980164796113968,
+          "mean_abs_shap_High": 0.8917630910873413
+        },
+        {
+          "feature": "Wind_Speed_kmh",
+          "mean_abs_shap_global": 0.758453369140625,
+          "mean_abs_shap_Low": 1.3611161708831787,
+          "mean_abs_shap_Medium": 0.12574340403079987,
+          "mean_abs_shap_High": 0.7885008454322815
+        },
+        {
+          "feature": "Crop_Growth_Stage_Sowing",
+          "mean_abs_shap_global": 0.7460952401161194,
+          "mean_abs_shap_Low": 1.0292621850967407,
+          "mean_abs_shap_Medium": 0.3262353837490082,
+          "mean_abs_shap_High": 0.8827881813049316
+        },
+        {
+          "feature": "Crop_Growth_Stage_Harvest",
+          "mean_abs_shap_global": 0.6173756122589111,
+          "mean_abs_shap_Low": 0.8991288542747498,
+          "mean_abs_shap_Medium": 0.2333913892507553,
+          "mean_abs_shap_High": 0.7196068167686462
+        },
+        {
+          "feature": "Soil_moisture_sqrt",
+          "mean_abs_shap_global": 0.38987255096435547,
+          "mean_abs_shap_Low": 0.5885870456695557,
+          "mean_abs_shap_Medium": 0.05977488309144974,
+          "mean_abs_shap_High": 0.5212557315826416
+        },
+        {
+          "feature": "Crop_Growth_Stage_Flowering",
+          "mean_abs_shap_global": 0.3228737413883209,
+          "mean_abs_shap_Low": 0.8874667286872864,
+          "mean_abs_shap_Medium": 0.04239527881145477,
+          "mean_abs_shap_High": 0.03875846415758133
+        },
+        {
+          "feature": "rainfall_temp_ratio",
+          "mean_abs_shap_global": 0.26758715510368347,
+          "mean_abs_shap_Low": 0.059852197766304016,
+          "mean_abs_shap_Medium": 0.05544249713420868,
+          "mean_abs_shap_High": 0.6874668598175049
+        },
+        {
+          "feature": "wind_chill_proxy",
+          "mean_abs_shap_global": 0.23474904894828796,
+          "mean_abs_shap_Low": 0.15772829949855804,
+          "mean_abs_shap_Medium": 0.12551917135715485,
+          "mean_abs_shap_High": 0.42099955677986145
+        },
+        {
+          "feature": "Crop_Growth_Stage_Vegetative",
+          "mean_abs_shap_global": 0.23138350248336792,
+          "mean_abs_shap_Low": 0.6409852504730225,
+          "mean_abs_shap_Medium": 0.02057713456451893,
+          "mean_abs_shap_High": 0.03258815035223961
+        },
+        {
+          "feature": "Rainfall_mm",
+          "mean_abs_shap_global": 0.21295583248138428,
+          "mean_abs_shap_Low": 0.15019285678863525,
+          "mean_abs_shap_Medium": 0.11246111243963242,
+          "mean_abs_shap_High": 0.37621352076530457
+        },
+        {
+          "feature": "water_balance",
+          "mean_abs_shap_global": 0.18666020035743713,
+          "mean_abs_shap_Low": 0.0818697065114975,
+          "mean_abs_shap_Medium": 0.13086475431919098,
+          "mean_abs_shap_High": 0.3472461700439453
+        },
+        {
+          "feature": "Mulching_Used_Yes",
+          "mean_abs_shap_global": 0.1855538934469223,
+          "mean_abs_shap_Low": 0.36172494292259216,
+          "mean_abs_shap_Medium": 0.017788566648960114,
+          "mean_abs_shap_High": 0.17714808881282806
+        },
+        {
+          "feature": "Humidity",
+          "mean_abs_shap_global": 0.18519112467765808,
+          "mean_abs_shap_Low": 0.19737118482589722,
+          "mean_abs_shap_Medium": 0.12304746359586716,
+          "mean_abs_shap_High": 0.23515485227108002
+        },
+        {
+          "feature": "Previous_Irrigation_mm",
+          "mean_abs_shap_global": 0.17385171353816986,
+          "mean_abs_shap_Low": 0.1492609977722168,
+          "mean_abs_shap_Medium": 0.11770746856927872,
+          "mean_abs_shap_High": 0.25458669662475586
+        },
+        {
+          "feature": "irrigation_diff",
+          "mean_abs_shap_global": 0.1223348081111908,
+          "mean_abs_shap_Low": 0.029032712802290916,
+          "mean_abs_shap_Medium": 0.0480390302836895,
+          "mean_abs_shap_High": 0.2899326980113983
+        },
+        {
+          "feature": "air_soil_moisture_mismatch",
+          "mean_abs_shap_global": 0.10359790921211243,
+          "mean_abs_shap_Low": 0.064914271235466,
+          "mean_abs_shap_Medium": 0.03942464292049408,
+          "mean_abs_shap_High": 0.20645485818386078
+        },
+        {
+          "feature": "log_Rainfall_mm",
+          "mean_abs_shap_global": 0.04875950887799263,
+          "mean_abs_shap_Low": 0.043698981404304504,
+          "mean_abs_shap_Medium": 0.024728991091251373,
+          "mean_abs_shap_High": 0.0778505727648735
+        },
+        {
+          "feature": "log_Previous_Irrigation_mm",
+          "mean_abs_shap_global": 0.04019073396921158,
+          "mean_abs_shap_Low": 0.04353749379515648,
+          "mean_abs_shap_Medium": 0.028079383075237274,
+          "mean_abs_shap_High": 0.04895535111427307
+        }
+      ]
+    },
+    "weather": {
+      "api_benchmarks": {
+        "tested_locations": [
+          "New Delhi",
+          "Des Moines",
+          "Fresno",
+          "Kyiv",
+          "Nairobi",
+          "Sao Paulo",
+          "Punjab",
+          "Cairo"
+        ],
+        "success_rate_pct": 100.0,
+        "successful_calls": 8,
+        "total_calls": 8,
+        "mean_latency_ms": 1724.611850004294,
+        "median_latency_ms": 1645.520200021565,
+        "p95_latency_ms": 1999.6972100285348,
+        "individual_location_results": [
+          {
+            "location_query": "New Delhi",
+            "resolved_name": "New Delhi, India",
+            "geo_success": true,
+            "geo_status": 200,
+            "geo_time_ms": 970.2901999698952,
+            "weather_success": true,
+            "weather_status": 200,
+            "weather_time_ms": 1073.2453999808058,
+            "total_time_ms": 2043.6983000254259,
+            "overall_success": true,
+            "forecast_days_retrieved": 3,
+            "forecast_3d_rain_mm": 0.0
+          },
+          {
+            "location_query": "Des Moines",
+            "resolved_name": "Des Moines, United States",
+            "geo_success": true,
+            "geo_status": 200,
+            "geo_time_ms": 785.9575999900699,
+            "weather_success": true,
+            "weather_status": 200,
+            "weather_time_ms": 886.46119995974,
+            "total_time_ms": 1672.521400032565,
+            "overall_success": true,
+            "forecast_days_retrieved": 3,
+            "forecast_3d_rain_mm": 49.03
+          },
+          {
+            "location_query": "Fresno",
+            "resolved_name": "Fresno, United States",
+            "geo_success": true,
+            "geo_status": 200,
+            "geo_time_ms": 796.8245000811294,
+            "weather_success": true,
+            "weather_status": 200,
+            "weather_time_ms": 821.5882000513375,
+            "total_time_ms": 1618.519000010565,
+            "overall_success": true,
+            "forecast_days_retrieved": 3,
+            "forecast_3d_rain_mm": 3.1
+          },
+          {
+            "location_query": "Kyiv",
+            "resolved_name": "Kyiv, Ukraine",
+            "geo_success": true,
+            "geo_status": 200,
+            "geo_time_ms": 960.6027000118047,
+            "weather_success": true,
+            "weather_status": 200,
+            "weather_time_ms": 853.6029999377206,
+            "total_time_ms": 1814.3582999473438,
+            "overall_success": true,
+            "forecast_days_retrieved": 3,
+            "forecast_3d_rain_mm": 11.4
+          },
+          {
+            "location_query": "Nairobi",
+            "resolved_name": "Nairobi, Kenya",
+            "geo_success": true,
+            "geo_status": 200,
+            "geo_time_ms": 796.590100042522,
+            "weather_success": true,
+            "weather_status": 200,
+            "weather_time_ms": 782.2352999355644,
+            "total_time_ms": 1578.9103000424802,
+            "overall_success": true,
+            "forecast_days_retrieved": 3,
+            "forecast_3d_rain_mm": 33.2
+          },
+          {
+            "location_query": "Sao Paulo",
+            "resolved_name": "S\u00e3o Paulo, Brazil",
+            "geo_success": true,
+            "geo_status": 200,
+            "geo_time_ms": 821.1054999846965,
+            "weather_success": true,
+            "weather_status": 200,
+            "weather_time_ms": 759.7441000398248,
+            "total_time_ms": 1580.96559997648,
+            "overall_success": true,
+            "forecast_days_retrieved": 3,
+            "forecast_3d_rain_mm": 10.8
+          },
+          {
+            "location_query": "Punjab",
+            "resolved_name": "Chak Number Two, Pakistan",
+            "geo_success": true,
+            "geo_status": 200,
+            "geo_time_ms": 927.5558000663295,
+            "weather_success": true,
+            "weather_status": 200,
+            "weather_time_ms": 990.3152000624686,
+            "total_time_ms": 1917.9809000343084,
+            "overall_success": true,
+            "forecast_days_retrieved": 3,
+            "forecast_3d_rain_mm": 0.0
+          },
+          {
+            "location_query": "Cairo",
+            "resolved_name": "Cairo, Egypt",
+            "geo_success": true,
+            "geo_status": 200,
+            "geo_time_ms": 840.1035000570118,
+            "weather_success": true,
+            "weather_status": 200,
+            "weather_time_ms": 729.7297000186518,
+            "total_time_ms": 1569.9409999651834,
+            "overall_success": true,
+            "forecast_days_retrieved": 3,
+            "forecast_3d_rain_mm": 0.0
+          }
+        ]
+      },
+      "rainfall_adjustment_curves": {
+        "High": [
+          {
+            "rainfall_mm": 0,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 25.0,
+            "water_savings_pct": 0.0,
+            "decision": "Adjusted to 25.0 mm"
+          },
+          {
+            "rainfall_mm": 1,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 24.0,
+            "water_savings_pct": 4.0,
+            "decision": "Adjusted to 24.0 mm"
+          },
+          {
+            "rainfall_mm": 2,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 23.0,
+            "water_savings_pct": 8.0,
+            "decision": "Adjusted to 23.0 mm"
+          },
+          {
+            "rainfall_mm": 3,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 22.0,
+            "water_savings_pct": 12.0,
+            "decision": "Adjusted to 22.0 mm"
+          },
+          {
+            "rainfall_mm": 4,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 21.0,
+            "water_savings_pct": 16.0,
+            "decision": "Adjusted to 21.0 mm"
+          },
+          {
+            "rainfall_mm": 5,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 20.0,
+            "water_savings_pct": 20.0,
+            "decision": "Adjusted to 20.0 mm"
+          },
+          {
+            "rainfall_mm": 6,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 19.0,
+            "water_savings_pct": 24.0,
+            "decision": "Adjusted to 19.0 mm"
+          },
+          {
+            "rainfall_mm": 7,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 18.0,
+            "water_savings_pct": 28.000000000000004,
+            "decision": "Adjusted to 18.0 mm"
+          },
+          {
+            "rainfall_mm": 8,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 17.0,
+            "water_savings_pct": 32.0,
+            "decision": "Adjusted to 17.0 mm"
+          },
+          {
+            "rainfall_mm": 9,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 16.0,
+            "water_savings_pct": 36.0,
+            "decision": "Adjusted to 16.0 mm"
+          },
+          {
+            "rainfall_mm": 10,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 15.0,
+            "water_savings_pct": 40.0,
+            "decision": "Adjusted to 15.0 mm"
+          },
+          {
+            "rainfall_mm": 11,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 12,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 13,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 14,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 15,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 16,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 17,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 18,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 19,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 20,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 21,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 22,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 23,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 24,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 25,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 26,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 27,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 28,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 29,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 30,
+            "base_irrigation_mm": 25,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          }
+        ],
+        "Medium": [
+          {
+            "rainfall_mm": 0,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 15.0,
+            "water_savings_pct": 0.0,
+            "decision": "Adjusted to 15.0 mm"
+          },
+          {
+            "rainfall_mm": 1,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 14.0,
+            "water_savings_pct": 6.666666666666667,
+            "decision": "Adjusted to 14.0 mm"
+          },
+          {
+            "rainfall_mm": 2,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 13.0,
+            "water_savings_pct": 13.333333333333334,
+            "decision": "Adjusted to 13.0 mm"
+          },
+          {
+            "rainfall_mm": 3,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 12.0,
+            "water_savings_pct": 20.0,
+            "decision": "Adjusted to 12.0 mm"
+          },
+          {
+            "rainfall_mm": 4,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 11.0,
+            "water_savings_pct": 26.666666666666668,
+            "decision": "Adjusted to 11.0 mm"
+          },
+          {
+            "rainfall_mm": 5,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 10.0,
+            "water_savings_pct": 33.33333333333333,
+            "decision": "Adjusted to 10.0 mm"
+          },
+          {
+            "rainfall_mm": 6,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 9.0,
+            "water_savings_pct": 40.0,
+            "decision": "Adjusted to 9.0 mm"
+          },
+          {
+            "rainfall_mm": 7,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 8.0,
+            "water_savings_pct": 46.666666666666664,
+            "decision": "Adjusted to 8.0 mm"
+          },
+          {
+            "rainfall_mm": 8,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 7.0,
+            "water_savings_pct": 53.333333333333336,
+            "decision": "Adjusted to 7.0 mm"
+          },
+          {
+            "rainfall_mm": 9,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 6.0,
+            "water_savings_pct": 60.0,
+            "decision": "Adjusted to 6.0 mm"
+          },
+          {
+            "rainfall_mm": 10,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 5.0,
+            "water_savings_pct": 66.66666666666666,
+            "decision": "Adjusted to 5.0 mm"
+          },
+          {
+            "rainfall_mm": 11,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 12,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 13,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 14,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 15,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 16,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 17,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 18,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 19,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 20,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 21,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 22,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 23,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 24,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 25,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 26,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 27,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 28,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 29,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 30,
+            "base_irrigation_mm": 15,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          }
+        ],
+        "Low": [
+          {
+            "rainfall_mm": 0,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 5.0,
+            "water_savings_pct": 0.0,
+            "decision": "Adjusted to 5.0 mm"
+          },
+          {
+            "rainfall_mm": 1,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 4.0,
+            "water_savings_pct": 20.0,
+            "decision": "Adjusted to 4.0 mm"
+          },
+          {
+            "rainfall_mm": 2,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 3.0,
+            "water_savings_pct": 40.0,
+            "decision": "Adjusted to 3.0 mm"
+          },
+          {
+            "rainfall_mm": 3,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 2.0,
+            "water_savings_pct": 60.0,
+            "decision": "Adjusted to 2.0 mm"
+          },
+          {
+            "rainfall_mm": 4,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 1.0,
+            "water_savings_pct": 80.0,
+            "decision": "Adjusted to 1.0 mm"
+          },
+          {
+            "rainfall_mm": 5,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (0 mm)"
+          },
+          {
+            "rainfall_mm": 6,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (0 mm)"
+          },
+          {
+            "rainfall_mm": 7,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (0 mm)"
+          },
+          {
+            "rainfall_mm": 8,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (0 mm)"
+          },
+          {
+            "rainfall_mm": 9,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (0 mm)"
+          },
+          {
+            "rainfall_mm": 10,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (0 mm)"
+          },
+          {
+            "rainfall_mm": 11,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 12,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 13,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 14,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 15,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 16,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 17,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 18,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 19,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 20,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 21,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 22,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 23,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 24,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 25,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 26,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 27,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 28,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 29,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          },
+          {
+            "rainfall_mm": 30,
+            "base_irrigation_mm": 5,
+            "adjusted_irrigation_mm": 0.0,
+            "water_savings_pct": 100.0,
+            "decision": "Skip (Rain > 10mm)"
+          }
+        ]
+      }
+    },
+    "water_savings": {
+      "evaluation_records": 100000,
+      "class_distribution": {
+        "Low": 0.58529,
+        "Medium": 0.38077,
+        "High": 0.03394
+      },
+      "baselines": {
+        "fixed_schedule_15mm": 15.0,
+        "flood_irrigation_20mm": 20.0,
+        "mathematical_reproduction_baseline_mm": 14.37348484848485
+      },
+      "simulated_ai_water_consumption": {
+        "standard_tier_5_15_25_mm": 9.4865,
+        "midpoint_tier_2_5_15_25_mm": 8.023275,
+        "skip_low_tier_0_15_25_mm": 6.56005,
+        "weather_adjusted_dynamic_mm": 0.3915414466666667
+      },
+      "water_savings_percentages": {
+        "standard_vs_15mm_fixed_pct": 36.75666666666667,
+        "reproduced_claim_vs_14_33mm_pct": 34.00000000000001,
+        "standard_vs_20mm_flood_pct": 52.5675,
+        "weather_adjusted_vs_15mm_pct": 97.38972368888888
+      },
+      "sensitivity_analysis": {
+        "soil_moisture": [
+          {
+            "moisture_bin": "Very Low (<25%)",
+            "records": 28252,
+            "mean_ai_water": 14.569941951012318,
+            "high_need_pct": 11.63811411581481,
+            "low_need_pct": 15.938694605691634,
+            "savings_vs_15mm": 2.867053659917881
+          },
+          {
+            "moisture_bin": "Low (25-45%)",
+            "records": 34761,
+            "mean_ai_water": 7.546819711745922,
+            "high_need_pct": 0.13233221138632376,
+            "low_need_pct": 74.6641350939271,
+            "savings_vs_15mm": 49.68786858836052
+          },
+          {
+            "moisture_bin": "Moderate (45-65%)",
+            "records": 36987,
+            "mean_ai_water": 7.42652823965177,
+            "high_need_pct": 0.16221915808256956,
+            "low_need_pct": 75.89693676156487,
+            "savings_vs_15mm": 50.48981173565487
+          },
+          {
+            "moisture_bin": "High (>65%)",
+            "records": 0,
+            "mean_ai_water": NaN,
+            "high_need_pct": NaN,
+            "low_need_pct": NaN,
+            "savings_vs_15mm": NaN
+          }
+        ],
+        "temperature": [
+          {
+            "temp_bin": "Cool (<20\u00b0C)",
+            "records": 26510,
+            "mean_ai_water": 8.021501320256506,
+            "savings_vs_15mm": 46.52332453162329
+          },
+          {
+            "temp_bin": "Moderate (20-30\u00b0C)",
+            "records": 33161,
+            "mean_ai_water": 8.31292783691686,
+            "savings_vs_15mm": 44.58048108722094
+          },
+          {
+            "temp_bin": "Hot (>30\u00b0C)",
+            "records": 40329,
+            "mean_ai_water": 11.41449081306256,
+            "savings_vs_15mm": 23.903394579582933
+          }
+        ],
+        "crops": [
+          {
+            "Crop_Type": "Rice",
+            "records": 16859,
+            "mean_ai_water": 9.325879352274749,
+            "savings_vs_15mm": 37.82747098483501
+          },
+          {
+            "Crop_Type": "Wheat",
+            "records": 16364,
+            "mean_ai_water": 9.379736005866537,
+            "savings_vs_15mm": 37.468426627556426
+          },
+          {
+            "Crop_Type": "Sugarcane",
+            "records": 17403,
+            "mean_ai_water": 9.448083663736137,
+            "savings_vs_15mm": 37.01277557509242
+          },
+          {
+            "Crop_Type": "Cotton",
+            "records": 16637,
+            "mean_ai_water": 9.517040331790588,
+            "savings_vs_15mm": 36.553064454729416
+          },
+          {
+            "Crop_Type": "Potato",
+            "records": 16214,
+            "mean_ai_water": 9.557789564573826,
+            "savings_vs_15mm": 36.281402902841165
+          },
+          {
+            "Crop_Type": "Maize",
+            "records": 16523,
+            "mean_ai_water": 9.695878472432367,
+            "savings_vs_15mm": 35.36081018378422
+          }
+        ]
+      },
+      "methodological_assumptions_and_caveats": [
+        "Simulation is purely algorithmic, derived from decision volume tiers (25mm High, 15mm Med, 5mm Low).",
+        "Assumes a traditional fixed calendar baseline of 14.33 mm to 15.00 mm per application cycle.",
+        "Water savings represent simulated volumetric reduction in irrigation demand, NOT physically metered field trial savings.",
+        "Dynamic crop-growth feedback, transpiration rates, and soil moisture drawdown between cycles are not modeled."
+      ]
+    }
+  }
+}
